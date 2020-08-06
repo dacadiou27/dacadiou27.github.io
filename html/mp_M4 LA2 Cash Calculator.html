@@ -48,7 +48,8 @@
             opacity: 0.9;
 
         }
-        .col-sm-4{
+
+        .col-sm-4 {
             padding: 1px;
         }
 
@@ -140,11 +141,14 @@
                             Mini-projects
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="mp_M4 LA2 Cash Calculator.html">Cash calculator</a>
+                            <a class="dropdown-item" href="./html/mp_M4 LA2 Cash Calculator.html">Cash calculator</a>
                             <a class="dropdown-item" href="mp_M4 LA3 Student Registration Form.html">Student
                                 Registration Form</a>
-                            <a class="dropdown-item" href="mp_M3 LA2 Movie Pricing Page.html">Movie Pricing Page</a>
-                            <a class="dropdown-item" href="mp_M2 LA3 Lyrics Page.html">Lyrics Page</a>
+                            <a class="dropdown-item" href="./html/mp_M3 LA2 Movie Pricing Page.html">Movie Pricing
+                                Page</a>
+                            <a class="dropdown-item" href="./html/mp_M2 LA3 Lyrics Page.html">Lyrics Page</a>
+                            <a class="dropdown-item" href="./html/mp_CSS Tissue Contrast Illusion.html">Contrast
+                                Illusion</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -155,144 +159,144 @@
         </nav>
     </div>
 
-        <!--<body>-->
-        <form>
-            <div class="row">
-                <div class="col-md-4 main">
-                    <div class="head">
-                        <h4>Admin</h4>
+    <!--<body>-->
+    <form>
+        <div class="row">
+            <div class="col-md-4 main">
+                <div class="head">
+                    <h4>Admin</h4>
+                </div>
+                <p>Add new product</p>
+                <div class="row">
+                    <div class="col-sm-4">
+
                     </div>
-                    <p>Add new product</p>
-                    <div class="row">
-                        <div class="col-sm-4">
-    
-                        </div>
-                        <div class="form-group col-sm-4">
-                            <input type="product" class="form-control" id="product" placeholder="product"
-                                name="product name">
-                        </div>
-                        <div class="col-sm-4">
-                            <button type="submit" value="submit" class=" btn-outline-success btn-sm mb-3"
-                                onclick="addingItems();"> Add
-                                Product</button>
-                        </div>
+                    <div class="form-group col-sm-4">
+                        <input type="product" class="form-control" id="product" placeholder="product"
+                            name="product name">
                     </div>
-                    <p>Select a product then add the price per unit:</p>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <select name="selection" id="selection" class="custom-select mb-3">
-                                <!--<option value="Apple">Apple</option>
+                    <div class="col-sm-4">
+                        <button type="submit" value="submit" class=" btn-outline-success btn-sm mb-3"
+                            onclick="addingItems();"> Add
+                            Product</button>
+                    </div>
+                </div>
+                <p>Select a product then add the price per unit:</p>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <select name="selection" id="selection" class="custom-select mb-3">
+                            <!--<option value="Apple">Apple</option>
                                 <option value="Banana">Banana</option>
                                 <option value="Tomatoes">Tomatoes</option>-->
-                            </select>
-                        </div>
-                        <div class="form-group col-sm-4">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="Dollar">$</span>
-                                </div>
-                                <input type="price" class="form-control" id="price" placeholder="price" name="price"
-                                    required>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="Dollar">$</span>
                             </div>
+                            <input type="price" class="form-control" id="price" placeholder="price" name="price"
+                                required>
                         </div>
-                        <div class="col-sm-4">
-                            <button type="submit" value="submit" class="btn-outline-success btn-sm mb-3"
-                                onclick="addPrice();"> Add Price</button>
-                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="submit" value="submit" class="btn-outline-success btn-sm mb-3"
+                            onclick="addPrice();"> Add Price</button>
                     </div>
                 </div>
-    
-                <div class="col-md-4 main">
-                    <div class="head">
-                        <h4>Checkout</h4>
-                    </div>
-                    <button type="submit" value="submit" class=" btn-outline-success btn-lm mb-3" onclick="resetReceipt()">
-                        New
-                        Transaction</button>
-                    <p>Select a product then type number of unit</p>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <select name="weightprice" id="weightprice" class="custom-select mb-3">
-                                <!--<option value="Apple">Apple (0.95$/unit)</option>
+            </div>
+
+            <div class="col-md-4 main">
+                <div class="head">
+                    <h4>Checkout</h4>
+                </div>
+                <button type="submit" value="submit" class=" btn-outline-success btn-lm mb-3" onclick="resetReceipt()">
+                    New
+                    Transaction</button>
+                <p>Select a product then type number of unit</p>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <select name="weightprice" id="weightprice" class="custom-select mb-3">
+                            <!--<option value="Apple">Apple (0.95$/unit)</option>
                                 <option value="Banana">Banana (0.75$/unit)</option>
                                 <option value="Tomatoes">Tomatoes (0.55$/unit)</option>-->
-                            </select>
-                        </div>
-                        <div class="col-sm-4" style="justify-content:left">
-                            <div class="calculator">
-                                <div class="row ">
-                                    <button type="submit" value="1" class="number" onclick="addProdQuantity1();">1</button>
-                                    <button type="submit" value="2" class="number" onclick="addProdQuantity2();">2</button>
-                                    <button type="submit" value="3" class="number" onclick="addProdQuantity3();">3</button>
-                                </div>
-    
-                                <div class="row">
-                                    <button type="submit" value="4" class="number" onclick="addProdQuantity4();">4</button>
-                                    <button type="submit" value="5" class="number" onclick="addProdQuantity5();">5</button>
-                                    <button type="submit" value="6" class="number" onclick="addProdQuantity6();">6</button>
-                                </div>
-    
-                                <div class="row">
-                                    <button type="submit" value="7" class="number" onclick="addProdQuantity7();">7</button>
-                                    <button type="submit" value="8" class="number" onclick="addProdQuantity8();">8</button>
-                                    <button type="submit" value="9" class="number" onclick="addProdQuantity9();">9</button>
-                                </div>
-    
-                                <div class="row">
-                                    <button type="submit" value="submit" class="number" onclick="addProdQuantityComma();"
-                                        disabled>,</button>
-                                    <button type="submit" value="0" class="number" onclick="addProdQuantity0();">0</button>
-                                    <button type="submit" value="submit" class="number" onclick="addProdQuantityDollars();"
-                                        disabled>$</button>
-                                </div>
-                                <br />
+                        </select>
+                    </div>
+                    <div class="col-sm-4" style="justify-content:left">
+                        <div class="calculator">
+                            <div class="row ">
+                                <button type="submit" value="1" class="number" onclick="addProdQuantity1();">1</button>
+                                <button type="submit" value="2" class="number" onclick="addProdQuantity2();">2</button>
+                                <button type="submit" value="3" class="number" onclick="addProdQuantity3();">3</button>
                             </div>
-                            <div id="transaction"></div>
+
+                            <div class="row">
+                                <button type="submit" value="4" class="number" onclick="addProdQuantity4();">4</button>
+                                <button type="submit" value="5" class="number" onclick="addProdQuantity5();">5</button>
+                                <button type="submit" value="6" class="number" onclick="addProdQuantity6();">6</button>
+                            </div>
+
+                            <div class="row">
+                                <button type="submit" value="7" class="number" onclick="addProdQuantity7();">7</button>
+                                <button type="submit" value="8" class="number" onclick="addProdQuantity8();">8</button>
+                                <button type="submit" value="9" class="number" onclick="addProdQuantity9();">9</button>
+                            </div>
+
+                            <div class="row">
+                                <button type="submit" value="submit" class="number" onclick="addProdQuantityComma();"
+                                    disabled>,</button>
+                                <button type="submit" value="0" class="number" onclick="addProdQuantity0();">0</button>
+                                <button type="submit" value="submit" class="number" onclick="addProdQuantityDollars();"
+                                    disabled>$</button>
+                            </div>
+                            <br />
                         </div>
-    
-                        <div class="col-sm-4">
-                            </br>
-                            <button type="submit" value="submit" class="btn-outline-success btn-sm mb-3"
-                                onclick="addToCart();"> Add to
-                                Cart </button>
-                            <button type="submit" value="submit" class="btn-outline-success btn-sm mb-3"
-                                onclick="amountDue();"> Amount
-                                Due </button>
-                        </div>
-    
+                        <div id="transaction"></div>
                     </div>
+
+                    <div class="col-sm-4">
+                        </br>
+                        <button type="submit" value="submit" class="btn-outline-success btn-sm mb-3"
+                            onclick="addToCart();"> Add to
+                            Cart </button>
+                        <button type="submit" value="submit" class="btn-outline-success btn-sm mb-3"
+                            onclick="amountDue();"> Amount
+                            Due </button>
+                    </div>
+
                 </div>
-    
-                <div class="col-md-4 main">
-                    <div class="head">
-                        <h4>Receipt</h4>
-                    </div>
-                    <table class="table table-success table-sm table-striped" id="thisTable">
-                        <thead>
-                            <tr>
-                                <th scope="row" colspan="4" id="date">Date: </th>
-                            </tr>
-                            <tr>
-                                <th scope="row" colspan="4" id="timeNow">Time: </th>
-                            </tr>
-                            <tr>
-                                <!--<th colspan="4"> <input type="datetime-local" id="meeting-time" name="meeting-time"
+            </div>
+
+            <div class="col-md-4 main">
+                <div class="head">
+                    <h4>Receipt</h4>
+                </div>
+                <table class="table table-success table-sm table-striped" id="thisTable">
+                    <thead>
+                        <tr>
+                            <th scope="row" colspan="4" id="date">Date: </th>
+                        </tr>
+                        <tr>
+                            <th scope="row" colspan="4" id="timeNow">Time: </th>
+                        </tr>
+                        <tr>
+                            <!--<th colspan="4"> <input type="datetime-local" id="meeting-time" name="meeting-time"
                                         value="2020-06-12T19:30" min="2020-01-07T00:00" max="2050-06-14T00:00"> </th>-->
-                                <th colspan="4"> VEGYMARKET!
-                            <tr>
-                                <th colspan="4"> Thank you for shopping with us! </th>
-                            </tr>
-                            <tr>
-                                <th scope="col">Product</th>
-                                <th scope="col">$/unit</th>
-                                <th scope="col">Unit(s)</th>
-                                <th scope="col">Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                        <tfoot>
-                            <!--<tr>
+                            <th colspan="4"> VEGYMARKET!
+                        <tr>
+                            <th colspan="4"> Thank you for shopping with us! </th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">$/unit</th>
+                            <th scope="col">Unit(s)</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <tfoot>
+                        <!--<tr>
                                 <th scope="row">item1</th>
                                 <td>$/unit</td>
                                 <td>units</td>
@@ -304,21 +308,21 @@
                                 <td></td>
                                 <td></td>
                             </tr>-->
-                            <tr>
-                                <td scope="row" colspan="4" id="totalPrice">Total Price : </td>
-                            </tr>
-                            <tr>
-                                <td scope="row" colspan="4" id="totalTax">Total Taxes: </td>
-                            </tr>
-                            <tr>
-                                <td scope="row" colspan="4" id="totalAmt">Amount Due : </td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
+                        <tr>
+                            <td scope="row" colspan="4" id="totalPrice">Total Price : </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" colspan="4" id="totalTax">Total Taxes: </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" colspan="4" id="totalAmt">Amount Due : </td>
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
-    
-        </form>
-    </body>
-    
-    </html>
+        </div>
+
+    </form>
+</body>
+
+</html>
