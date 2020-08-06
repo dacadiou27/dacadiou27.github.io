@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Date        : -->
+<!--Title       : -->
+<!--Description : -->
+<!--Use "Shift" + "Alt" +"F" to justify evething -->
+
+<head>
+
+    <title>CSS Tissue Contrast Illusion</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- External set up of style-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- Internal set up of style-->
+    <style type="text/css">
+        /* CSS is for Presentation*/
+        body {
+            margin: 0;
+            /* by default it is 8px */
+        }
+
+        /* Grey Circle*/
+        div {
+            height: 200px;
+            width: 200px;
+            /*margin: auto;*/
+
+            background: grey;
+
+            border-radius: 100px;
+        }
+
+        /* Centered Layout*/
+        main {
+            display: flex;
+            /* use flex - container declaration*/
+            /* Set the circle hz*/
+            justify-content: space-around;
+            /*  flex - properties*/
+            /* flex box*/
+            align-items: center;
+            /*  flex - properties*/
+            /* flex box*/
+            height: 100vh;
+            /* Set the vertical height to the full area available*/
+        }
+
+        /* Split-colour background*/
+        main {
+            /*background:linear-gradient(90deg,white ,black); /* Set a gradient color from roth to left and from white to black*/
+
+            background: linear-gradient(90deg, white 50%, black 50%);
+        }
+
+        /* Full viewport image*/
+        img {
+            display: block;
+            /*remove any remaining white space*/
+
+            object-fit: cover;
+            /* Fit the entire element to respect aspect ratio*/
+
+            height: 100vh;
+            /* Set the vertical height to the full area available*/
+            width: 100vw;
+            /* Set the hz width to the full area available*/
+
+            background-size: cover;
+        }
+
+        /* Overlapper Image*/
+
+        body {
+            display: grid;
+            /* use grid - container declaration*/
+            grid-template-columns: 1fr;
+            /* set grid 1 colum 1 row*/
+            grid-template-rows: 1fr;
+        }
+
+        main,
+        img {
+            /* set overlap in the grid*/
+            grid-column: 1 / -1;
+            /* select grid from colums (pillars) 1 to the end*/
+            grid-row: 1 / -1;
+            /* select grid from rows (pillars) to 1 to the end*/
+        }
+
+        img {
+            /* sother way to to over lap - without the 2 previous CSS declaration*/
+            /*position:absolute; /* make the image float*/
+            /*left: 0;/* move the floating image to the left*/
+            /*top: 0;/* move the floating image to the top*/
+
+            opacity: 0.5;
+        }
+
+        /* Mobile version*/
+        @media (orientation:portrait) {
+            main {
+                flex-direction: column;
+                background: linear-gradient(180deg, white 50%, black 50%);
+            }
+        }
+    </style>
+
+    <!-- Internal set up of JS script-->
+    <script type="text/javascript">
+    //JS is for Behavior
+
+    </script>
+
+</head>
+
+<body>
+    <!--HTML is for content-->
+    <main>
+        <div></div>
+        <div></div>
+    </main>
+    <img src ="https://picsum.photos/500/500" class ="image" alt="Random from Picsum" width="500" height="500"> <!--BB practice for HTML images to add width & height-->
+    <!--<img src="https://picsum.photos/id/1003/500/500" class="image" alt="Random from Picsum" width="500" height="500">
+
+    <!-- External set up of JS-->
+    <script type="text/javascript" src="../js/js_scripts.js"></script>
+</body>
+
+</html>
