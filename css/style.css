@@ -1,0 +1,31 @@
+/* Container */
+        .container {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+            /*border: solid black;*/
+        }
+
+/* Navigation bar */
+        .jumbotron {
+            background-image: url(../img/banner.jpg);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bg-custom {
+            background-color: black;
+        }
+
+/* Content */
+
+        .legend{
+            text-align: center;
+            font-size: smaller;
+            font-weight: bolder;
+            font-style: italic;
+            color: grey;
+        }
+
+
+
+
