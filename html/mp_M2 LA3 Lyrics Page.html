@@ -2,26 +2,22 @@
 <html>
 
 <head>
-
-    <title>mp M2 LA3 Lyrics Page</title>
+    <!--Date 5th June 2020-->
+    <!--RevisionS 8th June 2020-->
+    <!--Module 1 Lesson 3 DC-->
+    <!--Lyrics-->
+    <title>M1 L3 DC Lyrics</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- 3.5.1 jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified Bootstrap CSS -->
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <!-- 3.4.1 compiled and minified Bootstrap CSS -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- 4.5.0 Latest compiled Bootstrap CSS-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!-- 1.16.0 Popper library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
     <!-- External set up of style-->
-    <link rel="stylesheet" type"text/css" href="../css/lyrics_style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 
     <!-- Internal set up of style-->
     <style>
@@ -29,7 +25,6 @@
             width: 1000px;
             margin: auto;
             background-color: white;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
         /*header content setting*/
@@ -47,10 +42,7 @@
         }
 
         h1 {
-            color: yellow;
-            font-size: 40px;
-            margin-bottom: 0;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: yellow
         }
 
         div.menu {
@@ -58,21 +50,11 @@
             text-align: center;
             height: 50px;
             color: white;
-            text-decoration: none;
-            font-size: 17px;
+            border: 10px solid grey;
         }
-
-        div.menu a {
-            color: #f2f2f2;
-            text-align: center;
-            padding: 40px 40px;
-            text-decoration: none;
-        }
-
-
 
         div.description {
-            background-color: black;
+            background-color: darkgrey;
             opacity: 0.75;
             height: 250px;
             text-transform: uppercase;
@@ -92,17 +74,6 @@
             background-color: yellow;
             width: 150px;
             text-align: center;
-            margin-bottom: 0;
-            padding: 8px 8px 8px 8px;
-        }
-
-        h3 {
-            color: white;
-            margin-top: 0;
-        }
-
-        h4 {
-            color: white;
         }
 
         div.verse {
@@ -122,53 +93,31 @@
             padding: 0px 0px 0px 12px;
         }
 
-        #verse {
-            border-width: 5px;
-            border-left-color: yellow;
-        }
-
         /*side note setting*/
-        div.page_side_note_title {
-            width: 250px;
-            float: right;
-            margin-top: 50px;
-            margin-right: 20px;
-            padding-right: 10px;
-        }
-
         div.page_side_note {
             color: white;
             width: 250px;
             float: right;
             background-color: rgb(58, 58, 58);
-            margin: 0px 20px 50px 20px;
-            padding: 10px;
+            margin: 50px 20px 50px 20px;
         }
 
         h2.head_side_note {
             color: black;
             background-color: yellow;
-            display: flex;
-            justify-content: left;
+            text-align: center;
             width: 250px;
-            margin-left: -10px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            padding-right: 12px;
-            text-transform: uppercase;
-            font-size: 20px;
+
         }
 
         p.note_paragraph {
             margin-left: 5px;
             margin-right: 5px;
-            font-size: 14px;
         }
 
         div.cite {
-            margin-left: 60px;
+            margin-left: 20px;
             margin-right: 5px;
-            font-size: 12px;
         }
 
         div.video {
@@ -182,7 +131,6 @@
             width: 1000px;
             clear: both;
             background-color: white;
-            font-size: x-small;
         }
     </style>
 
@@ -190,62 +138,64 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-custom" style="background-color: black;">
-        <a class="navbar-brand" href="#">Menu</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./1_Prof.html">Professional Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./2_Hobbies.html">My Hobbies</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./3_Gallery.html">My Gallery</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Mini-projects
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="./mp_M4 LA2 Cash Calculator.html">Cash calculator</a>
-                        <a class="dropdown-item" href="./mp_M4 LA3 Student Registration Form.html">Student
-                            Registration Form</a>
-                        <a class="dropdown-item" href="./mp_M3 LA2 Movie Pricing Page.html">Movie Pricing Page</a>
-                        <a class="dropdown-item" href="./mp_M2 LA3 Lyrics Page.html">Lyrics Page</a>
-                        <a class="dropdown-item" href="./mp_CSS Tissue Contrast Illusion.html">Contrast Illusion</a>
-                            Illusion</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./4_Contact_me.html">Contact Me<span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="container">
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom" style="background-color: black;">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="1_Prof.html">Professional Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="2_Hobbies.html">My Hobbies</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link" href="3_Gallery.html">My Gallery</a>
+                    </li>-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Mini-projects
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="mp_M4 LA2 Cash Calculator.html">Cash calculator</a>
+                            <a class="dropdown-item" href="mp_M4 LA3 Student Registration Form.html">Student
+                                Registration Form</a>
+                            <a class="dropdown-item" href="mp_M3 LA2 Movie Pricing Page.html">Movie Pricing Page</a>
+                            <a class="dropdown-item" href="mp_M2 LA3 Lyrics Page.html">Lyrics Page</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="4_Contact_me.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
-    <div class=site_header>
-        <div class="header">
-            <p><b>The Lyrics Party</b> </p>
-        </div>
+    <div class="page">
 
-        <div class="menu">
-            <br />
-            <a href="/home.html">home </a>
-            <a href="/top_songs.html">top songs</a>
-            <a href="/community.html">community</a>
-        </div>
+        <div class=site_header>
+            <div class="header">
+                <p>The Lyrics Party </p>
+            </div>
 
-        <div class="page">
+            <div class="menu">
+                <!--how to set links color to white?-->
+                <br />
+                <a href="#">home </a> |
+                <a href="#">top songs</a> |
+                <a href="#">community</a>
+            </div>
 
             <div class="description">
                 <br />
@@ -254,114 +204,98 @@
                 <h1>This Must Be The Place (Naive Melody)</h1>
                 <h3>Talking Heads</h3>
                 <h4>Album: Speaking in Tongues</h4>
+
+
             </div>
-
-
-            <div class=site_content>
-                <h2>[Verse 1]</h2>
-                <div class="verse">
-                    <p>Home is where I want to be</br>
-                        Pick me up and turn me round</br>
-                        I feel numb, born with a weak heart</br>
-                        I guess I must be having fun</br>
-                        The less we say about it, the better</br>
-                        Make it up as we go along</br>
-                        Feet on the ground, head in the sky</br>
-                        It's okay, I know nothing's wrong, nothing</br></p>
-                </div>
-
-                <h2 style=margin-left:20px>[Chorus]</h2>
-                <div class="chorus">
-                    <p>Hi-yeah, I got plenty of time</br>
-                        Hi-yeah, you got light in your eyes</br>
-                        And you're standing here beside me</br>
-                        I love the passing of time</br>
-                        Never for money, always for love</br>
-                        Cover up and say goodnight, say goodnight</br></p>
-                </div>
-
-                <h2>[Verse 2]</h2>
-                <div class="verse">
-                    <p Home is where I want to be</br>
-                        But I guess I'm already there</br>
-                        I come home, she lifted up her wings</br>
-                        I guess that this must be the place</br>
-                        I can't tell one from the other</br>
-                        Did I find you or you find me?</br>
-                        There was a time before we were born</br>
-                        If someone asks, this is where I'll be, where I'll be</br></p>
-                </div>
-
-                <h2 style=margin-left:20px>[Chorus]</h2>
-                <div class="chorus">
-                    <p>Hi-yeah, we drift in and out</br>
-                        Hi-yeah, sing into my mouth</br>
-                        Out of all those kinds of people</br>
-                        You got a face with a view</br>
-                        I'm just an animal looking for a home</br>
-                        Share the same space for a minute or two</br>
-                        And you love me 'til my heart stops</br>
-                        Love me 'til I'm dead</br>
-                        Eyes that light up, eyes look through you</br>
-                        Cover up the blank spots, hit me on the head, ah-ooh</br></p>
-                </div>
-            </div>
-            <div class="page_side_note_title">
-                <h2 class="head_side_note">About the song</h2>
-            </div>
-            <div class="page_side_note">
-
-                <p class="note_paragraph">"This Must Be the Place (Naive Melody)" is a song by new wave band Talking
-                    Heads,
-                    released in November 1983 as the second single from their fifth album Speaking in Tongues. The
-                    lyrics
-                    were written by David Byrne, and the music was written by Byrne and the other members of the band,
-                    Chris
-                    Frantz, Tina Weymouth and Jerry Harrison.
-                <p class="note_paragraph">In the "Self Interview" on the DVD of the concert film Stop Making Sense,
-                    Byrne
-                    states that it is a love song, a topic he tends to avoid because it is "kinda big." He also said of
-                    the
-                    song:</p>
-
-                <div class="cite">
-                    <cite>That's a love song made up almost completely of non sequiturs, phrases that may have a strong
-                        emotional resonance but don't have any narrative qualities. It's a real honest kind of love
-                        song. I
-                        don't think I've ever done a real love song before. Mine always had a sort of reservation, or a
-                        twist. I tried to write one that wasn't corny, that didn't sound stupid or lame the way many do.
-                        I
-                        think I succeeded; I was pretty happy with that.<sup style=color:yellow>[1]</sup></cite>
-                    <div>
-                        <br />
-                    </div>
-                </div>
-
-                <hr />
-                <div class="video">
-                    <video width="200" height="140" controls autoplay muted>
-                        <source scr="../img/DSCF0769.MOV" alt="You can't display this video in your browser!"
-                            type="video/MOV" />
-                    </video>
-                </div>
-            </div>
-
-
-            <div class="page_footer">
-                <br />
-                <hr / color="yellow">
-                <footer>
-                    </br>
-                    1 (n.d.). This Must Be the Place (Naive Melody) - Wikipedia. Retrieved July 4, 2018, from
-                    <a href="https://en.wikipedia.org/wiki/This_Must_Be_the_Place_(Naive_Melody)"> <mark
-                            color="yellow">https://en.wikipedia.org/wiki/This_Must_Be_the_Place_(Naive_Melody)
-                        </mark></a>
-                    <br />
-                    <br />
-                    <br />
-                    <hr / color="grey">
-                </footer>
-            </div>
-
         </div>
+
+        <div class=site_content>
+            <div class="verse">
+                <h2>[Verse 1]</h2>
+                <p>Home is where I want to be</br>
+                    Pick me up and turn me round</br>
+                    I feel numb, born with a weak heart</br>
+                    I guess I must be having fun</br>
+                    The less we say about it, the better</br>
+                    Make it up as we go along</br>
+                    Feet on the ground, head in the sky</br>
+                    It's okay, I know nothing's wrong, nothing</br></p>
+            </div>
+
+            <div class="chorus">
+                <h2>[Chorus]</h2>
+                <p>Hi-yeah, I got plenty of time</br>
+                    Hi-yeah, you got light in your eyes</br>
+                    And you're standing here beside me</br>
+                    I love the passing of time</br>
+                    Never for money, always for love</br>
+                    Cover up and say goodnight, say goodnight</br></p>
+            </div>
+
+            <div class="verse">
+                <h2>[Verse 2]</h2>
+                <p>Home is where I want to be</br>
+                    But I guess I'm already there</br>
+                    I come home, she lifted up her wings</br>
+                    I guess that this must be the place</br>
+                    I can't tell one from the other</br>
+                    Did I find you or you find me?</br>
+                    There was a time before we were born</br>
+                    If someone asks, this is where I'll be, where I'll be</br></p>
+            </div>
+
+            <div class="chorus">
+                <h2>[Chorus]</h2>
+                <p>Hi-yeah, we drift in and out</br>
+                    Hi-yeah, sing into my mouth</br>
+                    Out of all those kinds of people</br>
+                    You got a face with a view</br>
+                    I'm just an animal looking for a home</br>
+                    Share the same space for a minute or two</br>
+                    And you love me 'til my heart stops</br>
+                    Love me 'til I'm dead</br>
+                    Eyes that light up, eyes look through you</br>
+                    Cover up the blank spots, hit me on the head, ah-ooh</br></p>
+            </div>
+        </div>
+
+        <div class="page_side_note">
+            <h2 class="head_side_note">About the song</h2>
+            <p class="note_paragraph">"This Must Be the Place (Naive Melody)" is a song by new wave band Talking Heads,
+                released in November 1983 as the second single from their fifth album Speaking in Tongues. The lyrics
+                were written by David Byrne, and the music was written by Byrne and the other members of the band, Chris
+                Frantz, Tina Weymouth and Jerry Harrison.
+            <p class="note_paragraph">In the "Self Interview" on the DVD of the concert film Stop Making Sense, Byrne
+                states that it is a love song, a topic he tends to avoid because it is "kinda big." He also said of the
+                song:</p>
+
+            <div class="cite">
+                <cite>That's a love song made up almost completely of non sequiturs, phrases that may have a strong
+                    emotional resonance but don't have any narrative qualities. It's a real honest kind of love song. I
+                    don't think I've ever done a real love song before. Mine always had a sort of reservation, or a
+                    twist. I tried to write one that wasn't corny, that didn't sound stupid or lame the way many do. I
+                    think I succeeded; I was pretty happy with that.[1]</cite>
+            </div>
+
+            <hr />
+            <div class="video">
+                <video width="200" height="140" controls autoplay muted>
+                    <source scr="../img/DSCF0769.MOV" alt="You can't display this video in your browser!"
+                        type="video/MOV" />
+                </video>
+            </div>
+        </div>
+
+
+        <div class="page_footer">
+            <br />
+            <hr / color="yellow">
+            <footer>
+                1 (n.d.). This Must Be the Place (Naive Melody) - Wikipedia. Retrieved July 4, 2018, from
+                <a href="https://en.wikipedia.org/wiki/This_Must_Be_the_Place_(Naive_Melody)"> <mark
+                        color="yellow">https://en.wikipedia.org/wiki/This_Must_Be_the_Place_(Naive_Melody) </mark></a>
+            </footer>
+        </div>
+
+    </div>
 </body>
