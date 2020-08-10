@@ -22,6 +22,10 @@ h2 {
     color: #CCC;
 }
 
+.active {
+    font-weight: bolder;
+}
+
 .header {
     background-image: url(../img/banner.jpg);
     height: 200px;
