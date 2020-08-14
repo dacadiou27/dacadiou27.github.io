@@ -58,10 +58,10 @@ footer {
   }
 
   .fa {
-    padding: 18px 2px 18px 2px;
+    padding: 11px 2px 11px 2px;
     border-radius: 50%;
-    font-size: 15px;
-    width: 50px;
+    font-size: 19px;
+    width: 40px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
@@ -78,5 +78,10 @@ footer {
   
   .fa-linkedin {
     background: #007bb5;
+    color: white;
+  }
+  
+  .fa-github {
+    background: black;
     color: white;
   }
