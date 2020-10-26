@@ -12,7 +12,8 @@ h1 {
     padding-left: 5%;
     font-size: 60px;
     font-weight: 600;
-    font-family: Brush Script MT, Brush Script Std, cursive;
+    /*font-family: Brush Script MT, Brush Script Std, cursive;*/
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 h2 {
